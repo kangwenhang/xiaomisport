@@ -27,7 +27,7 @@ jobs:
         pwd='${{ secrets.PWD }}'
         step='${{ secrets.STEP }}'
         
-        python3 checkin.py <<EOF
+        python3 main.py <<EOF
         ${sckey}
         ${user}
         ${pwd}
