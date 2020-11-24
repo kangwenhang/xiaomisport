@@ -23,7 +23,7 @@ jobs:
         python-version: 3.7
     - name: 开始
       run: |
-        pip install -y requests
+        pip install requests
         sckey='${{ secrets.SCKEY }}'
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
