@@ -23,7 +23,6 @@ jobs:
         python-version: 3.7
     - name: 开始
       run: |
-        pip install -r requirements.txt
         sckey='${{ secrets.SCKEY }}'
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
