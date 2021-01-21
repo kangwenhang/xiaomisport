@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 0 18 * * *
+    - cron: 0 10 * * *
 
 jobs:
   build:
@@ -18,10 +18,10 @@ jobs:
     - name: 初始化Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
     - name: 开始
       run: |
-        pip install -r requirements.txt
+        pip install requests
         sckey='${{ secrets.SCKEY }}'
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
