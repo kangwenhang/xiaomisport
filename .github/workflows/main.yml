@@ -1,0 +1,32 @@
+# File: .github/workflows/repo-sync.yml
+name: sync-Squaregentleman/mimotion
+on:
+  schedule:
+    - cron: '1 0,15 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  push:
+    branches: [ main ]
+  repository_dispatch:
+    types: sync-Squaregentleman/mimotion
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync-Squaregentleman/mimotion
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/Squaregentleman/mimotion.git"
+          source_branch: "main"
+          destination_branch: "main"
+          github_token: ${{ secrets.PAT }}  
