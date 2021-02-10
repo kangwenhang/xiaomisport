@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   push:
-    branches: [ main ]
+    branches: [ try ]
   repository_dispatch:
     types: sync-Squaregentleman/mimotion
 jobs:
