@@ -47,7 +47,7 @@
 
 6. 小米运动不会更新步数，只有关联的会同步！！！！！
 
-7. 请各位在使用时Fork (主分支)[https://github.com/Squaregentleman/mimotion/] ，防止出现不必要的bug
+7. 请各位在使用时Fork[主分支](https://github.com/Squaregentleman/mimotion/)，防止出现不必要的bug.
 
 ## 历史Star数
 
