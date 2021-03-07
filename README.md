@@ -1,4 +1,5 @@
 # 别在发无意义的pr了 秋梨膏 修改运行时间的pr请不要在发了 自己修改就好了 何必提交到主分支呢？？？？？？？？
+# 请各位在使用时Fork(主分支)[https://github.com/Squaregentleman/mimotion/]，防止出现不必要的bug
 # 小米运动自动刷步数
 
 > 小米运动自动刷步数
@@ -46,3 +47,7 @@
 5. 如果支付宝没有更新步数,到小米运动->设置->账号->注销账号->清空数据,然后重新登录,重新绑定第三方
 
 6. 小米运动不会更新步数，只有关联的会同步！！！！！
+
+## 历史Star数
+
+[![Stargazers over time](https://starchart.cc/Squaregentleman/mimotion.svg)](https://starchart.cc/Squaregentleman/mimotion)
