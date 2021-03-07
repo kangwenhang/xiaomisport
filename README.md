@@ -1,5 +1,5 @@
 # 别在发无意义的pr了 秋梨膏 修改运行时间的pr请不要在发了 自己修改就好了 何必提交到主分支呢？？？？？？？？
-# 请各位在使用时Fork(主分支)[https://github.com/Squaregentleman/mimotion/]，防止出现不必要的bug
+# 请各位在使用时Fork (主分支)[https://github.com/Squaregentleman/mimotion/] ，防止出现不必要的bug
 # 小米运动自动刷步数
 
 > 小米运动自动刷步数
