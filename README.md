@@ -36,7 +36,7 @@
 
 如果使用server酱推送 **PKEY** 填写server酱的推送key
 
-如果使用tg推送 **PKEY** 填写 **<token>-<userid>**
+如果使用tg推送 **PKEY** 填写 **token-userid**
 
 ## 注意事项
 
