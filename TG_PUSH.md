@@ -10,7 +10,7 @@
 
 ![TG_PUSH2](https://gitee.com/lxk0301/jd_docker/raw/master/icon/TG_PUSH2.png)<br>
 
-**新创建的机器人需要跟它发一条消息来开启对话，否则可能会遇到secret填对了但是收不到消息的情况**<br>
+**新创建的机器人需要跟它发一条消息来开启对话，否则可能会遇到PEKY填对了但是收不到消息的情况**<br>
 
 Ⅲ.再次在Telegram上搜索[getuserIDbot](https://t.me/getuserIDbot)机器人，获取UserID。<br>
 
