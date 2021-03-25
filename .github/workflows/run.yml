@@ -20,7 +20,7 @@ jobs:
     - name: 初始化Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
     - name: 开始
       run: |
         pip install requests
