@@ -2,11 +2,11 @@ name: 刷步数
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   schedule:
-    - cron: 20 09 * * *
+    - cron: 0 10 * * *
   watch:
     types: started
 
