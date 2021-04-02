@@ -6,9 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 0 10 * * *
-  watch:
-    types: started
+    - cron: 20 09 * * *
 
 jobs:
   build:
@@ -20,19 +18,17 @@ jobs:
     - name: 初始化Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
     - name: 开始
       run: |
         pip install requests
-        pmode='${{ secrets.PMODE }}'
-        pkey='${{ secrets.PKEY }}'
+        sckey='${{ secrets.SCKEY }}'
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
         step='${{ secrets.STEP }}'
         
         python3 main.py <<EOF
-        ${pmode}
-        ${pkey}
+        ${sckey}
         ${user}
         ${pwd}
         ${step}
